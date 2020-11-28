@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutenedor</title>
+      
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="../../css/mdb.min.css">
+       <link rel="stylesheet" href="../../css/style.css">
+    <style>
+      /* Example page specific styling. */
+      html {
+        color: #111;
+        background: #Fafafa;
+        font-family: 'Inter', sans-serif;
+font-weight: 400;
+    font-size: 14px;
+      }
+
+      body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        line-height: normal;
+      }
+
+      label {
+        display: block;
+        margin-bottom: .5rem;
+          margin-left: 10px;
+          margin-top: 20px;
+          font-family: 'Inter', sans-serif;
+font-weight: 600;
+    font-size: 14px;
+          color: #190933;
+      }
+
+      code {
+        padding-left: .5em;
+        padding-right: .5em;
+        background: #EFEFEF;
+        font-weight: normal;
+        font-family: monospace;
+      }
+
+      main {
+        max-width: 40em;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .autocomplete-wrapper {
+        max-width: 20em;
+        
+      }
+
+      .submitted--hidden {
+        display: none;
+      }
+    </style>
+    <link rel="stylesheet" href="../dist/accessible-autocomplete.min.css">
+  </head>
+  <body>
+    <main>
+     
+
+     
+
+      <div class="submitted submitted--hidden">
+        <p>You submitted:</p>
+        <ul>
+          <li><code>"last-location": <span class="submitted__last-location"></span></code></li>
+          <li><code>"passport-location": <span class="submitted__passport-location"></span></code></li>
+        </ul>
+        <hr />
+      </div>
+<div class="row">
+<div class="col-10">
+      <form action="form.html" method="get">
+        <label for="last-location" >Buscá recetas</label>
+        <div class="autocomplete-wrapper" >
+          <select name="last-location" id="last-location" onchange="change_url( 'https://paufurlong.github.io/diplo/onboarding3-chips.html');" autofocus >
+            <option selected="true" disabled="disabled"> </option>
+            <option value="territory:AE-AZ">Fideos de espinaca</option>
+            <option value="country:AF">Ensalada de frutas</option>
+            <option value="territory:AE-AJ">Ensalada de estación</option>
+            <option value="territory:XQZ">Ensalada de remolacha y zanahoria</option>
+            <option value="country:AL">Ensalada de pollo</option>
+            <option value="country:DZ">Ensalada de papa</option>
+            <option value="territory:AS">Ensalada de rúcula</option>
+            <option value="country:AD">Ensalada césar</option>
+            <option value="country:AO">Ensalada de pasta y pollo</option>
+            <option value="territory:AI">Ensalada de fideos, kale y tomate</option>
+            <option value="territory:AQ">Ensalada de pasta con verduras salteadas</option>
+            <option value="country:AG">Ensalada de atún, espinaca, huevo, lechuga y zanahoria</option>
+            <option value="country:AR">Ensalada de espinaca cruda y parmesano</option>
+            <option value="country:AM">Ensalada de rúcula, crudo, queso y cherry</option>
+            <option value="territory:AW">Ensalada caprese</option>
+            <option value="territory:SH-AC">Ensalada de lechuga, tomate y remolacha</option>
+            <option value="country:AU">Ensalada de pollo y hortalizas crudas</option>
+            
+          </select>
+        </div>
+         <div class="col-2 btn-cancelar" style="float: right; position: absolute; right:-20px; top: 30px; ">  <a href="../../home.html" style="font-weight: 600; color: #007370;
+font-family: 'Inter', sans-serif; letter-spacing: 0.5px;line-height: 20px;font-size: 16px;  text-decoration: none;">Cancelar</a></div>
+      </form>
+        </div>
+    </div>
+         <div class="row fixedbutton">  
+    <div class="col">
+     <div>
+    <button type="button" class="btn btn-primary btn-rounded" style="width: 100%!important; " onclick="location.href='https://paufurlong.github.io/diplo/detalle-receta.html'">Buscar</button>
+    
+    </div>
+        
+    </div>
+    </div> 
+        
+    </main>
+      
+    
+    <script type="text/javascript" src="../dist/accessible-autocomplete.min.js"></script>
+    <script type="text/javascript">
+      var selectEl = document.querySelector('#last-location')
+      accessibleAutocomplete.enhanceSelectElement({
+        autoselect: true,
+        defaultValue: selectEl.options[selectEl.options.selectedIndex].innerHTML,
+        minLength: 2,
+        selectElement: selectEl
+      })
+
+      selectEl = document.querySelector('#passport-location')
+      accessibleAutocomplete.enhanceSelectElement({
+        autoselect: true,
+        defaultValue: selectEl.options[selectEl.options.selectedIndex].innerHTML,
+        minLength: 2,
+        selectElement: selectEl
+      })
+
+      var queryStringParameters = window.location.search
+      var previouslySubmitted = queryStringParameters.length > 0
+      if (previouslySubmitted) {
+        var submittedEl = document.querySelector('.submitted')
+        submittedEl.classList.remove('submitted--hidden')
+        var params = new URLSearchParams(document.location.search.split('?')[1])
+        document.querySelector('.submitted__last-location').innerHTML = params.get('last-location')
+        document.querySelector('.submitted__passport-location').innerHTML = params.get('passport-location')
+      }
+    </script>
+    
+      
+  </body>
+</html>
