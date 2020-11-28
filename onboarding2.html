@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Tutenedor</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Start your project here-->
+    <div id="bienvenida" class="container">
+    <div class="row stepper"> 
+        <div class="col-3">
+        <a href="index.html"><i class="fas fa-arrow-left green-text lg"  aria-label="Atrás"></i></a>    
+       </div>
+    <div class="col-5">
+       <p class="subtitle">Paso 1 de 4</p>  
+    </div>
+     <div class="col-3">
+         <ul class="stepper-pasos">
+         <li>
+          <img src="img/svg/step_1.svg" alt=" ">   
+        </li>
+         </ul>
+        
+        </div>
+    </div>  
+    <div class="row">  
+    <div class="col">
+       <h2 style="margin: auto;">¿Qué te gusta comer?</h2>  
+    </div>
+        
+    </div>  
+     <div class="row">  
+    <div class="col">
+       <h6 style="margin: auto; margin-top: 20px;">Seleccioná tus comidas favoritas</h6>  
+    </div>
+        
+    </div>  
+    
+        <script>
+        $("input type=checkbox").focus(function() {
+  $("label[for='" + this.toggle + "']").addClass("prueba-label");
+}).blur(function() {
+  $("label").removeClass("prueba-label");
+});     
+        </script>
+    
+
+    <div class="row opciones" style="margin-top: 10px;">
+    <div class="col-3">
+    <label class="prueba-label" for="toggle"><img id="labelunchecked1" src="img/svg/onboarding1-carne.png" alt=" " onclick="toggle_visibility1()" onkeydown="toggle_visibility()"
+    >Carne</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+        <div id="checkbox-test1"><img src="img/svg/Check.svg" alt=" "></div>
+   
+</div>  
+
+    <div class="col-3">
+    <label class="prueba-label" for="toggle"><img id="labelunchecked2" src="img/svg/onboarding1-veggie.png" alt=" " onclick="toggle_visibility2()" onkeydown="toggle_visibility()"
+    >Veggie</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+        <div id="checkbox-test2"><img src="img/svg/Check.svg" alt=" "></div>
+   
+</div>      
+    
+     <div class="col-3">
+    <label class="prueba-label" for="toggle"><img id="labelunchecked" src="img/svg/onboarding1-mex.png" alt=" " onclick="toggle_visibility3()" onkeydown="toggle_visibility()"
+    >Mexicano</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+        <div id="checkbox-test3"><img src="img/svg/Check.svg" alt=" "></div>
+   
+</div>  
+
+    <div class="col-3">
+    <label class="prueba-label" for="toggle"><img id="labelunchecked" src="img/svg/onboarding1-creppes.png" alt=" " onclick="toggle_visibility4()" onkeydown="toggle_visibility()"
+    >Creppes</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+        <div id="checkbox-test4"><img src="img/svg/Check.svg" alt=" "></div>
+   
+</div>      
+    </div>
+        
+    <div class="row opciones" style="margin-top: 10px;">
+    <div class="col-3">
+    <label class="prueba-label" for="toggle"><img id="labelunchecked" src="img/svg/onboarding1-ensalada.png" alt=" " onclick="toggle_visibility5()" onkeydown="toggle_visibility()"
+    >Ensalada</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+        <div id="checkbox-test5"><img src="img/svg/Check.svg" alt=" "></div>
+   
+</div>  
+
+    <div class="col-3">
+    <label class="prueba-label" for="toggle"><img id="labelunchecked" src="img/svg/onboarding1-ff.png" alt=" " onclick="toggle_visibility6()" onkeydown="toggle_visibility()"
+    >Fast Food</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+        <div id="checkbox-test6"><img src="img/svg/Check.svg" alt=" "></div>
+   
+</div>      
+    
+     <div class="col-3">
+    <label class="prueba-label" for="toggle"><img id="labelunchecked" src="img/svg/onboarding1-pollo.png" alt=" " onclick="toggle_visibility7()" onkeydown="toggle_visibility()"
+    >Pollo</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+        <div id="checkbox-test7"><img src="img/svg/Check.svg" alt=" "></div>
+   
+</div>  
+
+    <div class="col-3">
+    <label class="prueba-label" for="toggle"><img id="labelunchecked" src="img/svg/onboarding1-parrilla.png" alt=" " onclick="toggle_visibility8()" onkeydown="toggle_visibility()"
+    >Parrilla</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+        <div id="checkbox-test8"><img src="img/svg/Check.svg" alt=" "></div>
+   
+</div>      
+    </div>
+        
+    <div class="row opciones" style="margin-top: 10px; padding-bottom: 80px;">
+    <div class="col-3">
+    <label class="prueba-label" for="toggle"><img id="labelunchecked" src="img/svg/onboarding1-pasta.png" alt=" " onclick="toggle_visibility9()" onkeydown="toggle_visibility()"
+    >Pastas</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+        <div id="checkbox-test9"><img src="img/svg/Check.svg" alt=" "></div>
+   
+</div>  
+
+    <div class="col-3">
+    <label class="prueba-label" for="toggle"><img id="labelunchecked" src="img/svg/onboarding1-pescados.png" alt=" " onclick="toggle_visibility10()" onkeydown="toggle_visibility()"
+    >Pescados</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+        <div id="checkbox-test10"><img src="img/svg/Check.svg" alt=" "></div>
+   
+</div>      
+    
+     <div class="col-3">
+    <label class="prueba-label" for="toggle"><img id="labelunchecked" src="img/svg/onboarding1-pizza.png" alt=" " onclick="toggle_visibility11()" onkeydown="toggle_visibility()"
+    >Pizza</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+        <div id="checkbox-test11"><img src="img/svg/Check.svg" alt=" "></div>
+   
+</div>  
+
+    <div class="col-3">
+    <label class="prueba-label" for="toggle"><img id="labelunchecked" src="img/svg/onboarding1-postres.png" alt=" " onclick="toggle_visibility12()" onkeydown="toggle_visibility()"
+    >Postres</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+        <div id="checkbox-test12"><img src="img/svg/Check.svg" alt=" "></div>
+   
+</div>      
+    </div>
+        
+    <script type="text/javascript">
+function toggle_visibility1() {
+  var x = document.getElementById("checkbox-test1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        
+     <script type="text/javascript">
+function toggle_visibility2() {
+  var x = document.getElementById("checkbox-test2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        
+<script type="text/javascript">
+function toggle_visibility3() {
+  var x = document.getElementById("checkbox-test3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        
+     <script type="text/javascript">
+function toggle_visibility4() {
+  var x = document.getElementById("checkbox-test4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        
+    <script type="text/javascript">
+function toggle_visibility5() {
+  var x = document.getElementById("checkbox-test5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        
+     <script type="text/javascript">
+function toggle_visibility6() {
+  var x = document.getElementById("checkbox-test6");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        
+<script type="text/javascript">
+function toggle_visibility7() {
+  var x = document.getElementById("checkbox-test7");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        
+     <script type="text/javascript">
+function toggle_visibility8() {
+  var x = document.getElementById("checkbox-test8");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        
+    <script type="text/javascript">
+function toggle_visibility9() {
+  var x = document.getElementById("checkbox-test9");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        
+     <script type="text/javascript">
+function toggle_visibility10() {
+  var x = document.getElementById("checkbox-test10");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        
+<script type="text/javascript">
+function toggle_visibility11() {
+  var x = document.getElementById("checkbox-test11");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        
+     <script type="text/javascript">
+function toggle_visibility12() {
+  var x = document.getElementById("checkbox-test12");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        
+    <script type="text/javascript">
+$(document).keypress(function(e) {
+    $("checkbox-test1").hide();  
+    $("checkbox-test1").show();
+});
+</script>
+    
+   
+
+        
+    <div class="row fixedbutton">  
+    <div class="col">
+     <div>
+    <button type="button" class="btn btn-primary btn-rounded" onclick="document.location='onboarding3.html'">Siguiente paso</button>
+    
+    </div>
+        <button type="button" class="btn btn-link" onclick="document.location='home.html'">Lo hago después</button>
+    </div>
+    </div> 
+  
+    </div>
+    
+   
+    
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+</html>
