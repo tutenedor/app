@@ -290,6 +290,55 @@ line-height: 20px;
 font-size: 16px;  
  }
 
+.accesibilidad a{
+   font-weight: 400;
+}
+
+.accesibilidad{
+    margin-top: 70px;
+}
+
+.declaracion-title{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.texto-declaracion{
+    padding-top: 60px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.alineacion-title{
+    text-align: left!important;
+}
+
+.texto-declaracion2{
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: var(--gray-dark);
+    font-weight: 400;
+}
+
+.li-declaracion{
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: var(--gray-dark);
+    font-weight: 400;
+    padding-left: 5px;
+
+}
+
+ol{
+    padding-left: 20px;
+}
+
 .inputautocomplete{
     margin-top: 20px;
     width: 95%;
