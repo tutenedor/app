@@ -494,6 +494,43 @@ color: var(--black-main);
 transform: translateX(-10px);
 }
 
+
+input[type=checkbox] + label
+   {
+      
+       display:block;
+       text-align: center;
+       
+   }
+   
+   input[type=checkbox]:checked + label
+    {
+        
+        display:inline-block;
+        
+    }
+            
+            label.label-comida2{
+                padding-top: 70px;
+            text-align: center;
+                text-decoration: none;
+                list-style: none;
+            }
+
+
+.onb1-title{
+    margin: auto; 
+    padding-top: 30px;
+}
+
+.onb2-subt{
+    margin: auto; 
+    margin-top: 20px;
+    color: var(--gray-dark);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
 /* Fixed nav */
 
 .fixedmenu li{
@@ -573,6 +610,26 @@ font-size: 12px;
 
 .navselected{
 color:  var(--green-main);
+}
+
+.card-estrella{
+    padding-left: 10px; 
+    vertical-align: top;
+}
+
+.cantidad-estrellas{
+    text-align: left; 
+    padding-left: 105px;
+}
+
+.tutenedor-home{
+    height: 24px; 
+    margin: 0 auto;
+}
+
+.icon-filtros{
+    text-align: left; 
+    margin-right: 20px;
 }
 
 /* Detalle receta */
