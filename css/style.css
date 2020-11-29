@@ -812,6 +812,20 @@ font-size: 14px;
    
 }
 
+.instrucciones{
+    font-weight: 400!important;
+    color: var(--black-main);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.li-instrucciones{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    
+}
+
 .ingredientes-detalle{
     list-style: none;
     text-decoration: none;
