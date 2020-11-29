@@ -822,6 +822,8 @@ font-weight: 400;
 letter-spacing: 1.25;
 line-height: 20px;
 font-size: 14px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     
 }
 .ingredientes-detalle img{
