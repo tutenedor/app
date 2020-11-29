@@ -812,6 +812,27 @@ font-size: 14px;
    
 }
 
+.ingredientes-detalle{
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+    color: var(--black-main)!important;
+    font-family: 'Inter', sans-serif;
+font-weight: 400;
+letter-spacing: 1.25;
+line-height: 20px;
+font-size: 14px;
+    
+}
+.ingredientes-detalle img{
+    padding-right: 15px;
+}
+
+ul{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
 .ingredientes p{
     text-align: left;  
 }
@@ -900,6 +921,24 @@ font-size: 14px;
     margin-top: 30px;
 }
 
+.paramargin2{
+    margin-top: 15px;
+}
+.nutricion{
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+     color: var(--black-main);
+    letter-spacing: 1px!important;
+line-height: 16px;
+font-size: 14px;
+    font-weight: 400;
+}
+
+li .fa-circle{
+    padding-right: 5px;
+}
+
 .receta p{
     text-align: left;
     vertical-align: text-top;
@@ -908,6 +947,7 @@ font-size: 14px;
 
 .numero{
     font-weight: 600;
+    text-align: left;
    
 }
 
@@ -1016,6 +1056,14 @@ font-weight: 500;
 
 .lista-receta{
     padding-left: 10px;
+    text-align: left;
+    letter-spacing: 0.5px;
+line-height: 20px;
+font-size: 14px;
+color: var(--gray-main);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding-bottom: 20px;
 }
 
 .tip{
